@@ -31,7 +31,7 @@ function signIn (){
 		$spnloggin.show();
 		return
 	 }
-	if ($usrpass.val() !=='password123' && $usrrpass.val() !=='pandas')
+	if ($usrpass.val() !=='password123' && $usrpass.val() !=='pandas')
 		$spnpassword.show();
 		return
 	
