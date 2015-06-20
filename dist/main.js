@@ -41,16 +41,7 @@ function signIn (){
 		window.location.href="http://theironyard.com"
 		return
 	}
-
-
-
-
-
-
-
-
-
-	window.location.href="https://theironyard.com"
+	$spnincorrect.show();
 }
 function clickEnter(e){
 	if(e.which == 13){
