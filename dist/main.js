@@ -15,6 +15,12 @@ $signin.on('click', signIn);
 $signin.on ('keypress', clickEnter);
 
 function signIn (){
+	$spnloggin.hide();
+	$spnpassword.hide();
+	$spnnotfound.hide();
+	$spnincorrect.hide();
+
+
 	if($txtuser.val()==''){
 		$spnloggin.show();
 		return
@@ -27,14 +33,14 @@ function signIn (){
 		$spnpassword.show();
 		return
 	}
-	if($txtuser.val() !=='aaron@theironyard.com' && $txtuser.val() !=='admin@google.com'){
-		$spnloggin.show();
+	if($txtuser.val() =='aaron@theironyard.com' && $usrpass.val() =='password123'){
+		window.location.href="http://theironyard.com"
 		return
 	 }
-	if ($usrpass.val() !=='password123' && $usrpass.val() !=='pandas')
-		$spnpassword.show();
+	if ($txtuser.val() =='admin@google.com' && $usrpass.val() =='pandas'){
+		window.location.href="http://theironyard.com"
 		return
-	
+	}
 
 
 
